@@ -4,9 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="form.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box">
+            <div id="title-section" class="wrapper">
+                <h1 id="title">Learner's Survey</h1>
+                <p id="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta doloribus ipsa laborum voluptas cupiditate sequi doloremque repellat? Labore quas doloremque dolore aliquid qui consequatur eos! Vel rem delectus sed!</p>
+            </div>
+        </div>
+        <div class="box">
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label" class="question">Name</label>
+                    <input class="form-control" type="text" id="name" placeholder="Enter your name" required/>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label" class="question">Email</label>
+                    <input class="form-control" type="email" id="email" placeholder="Enter your email" required/>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label" class="question">Age (optional)</label>
+                    <input class="form-control" type="number" id="number" placeholder="Enter your age" min="12" max="65"/>
+                </div>
+                <div class="form-group">
+                    <label for="dropdown" class="question">Which option best describes your current role?</label>
+                    <select id="dropdown" required>
+                        <option disabled selected>Select current role</option>
+                        <option>Student</option>
+                        <option>Full time job</option>
+                        <option>Full time learner</option>
+                        <option>Prefer not to say</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="question">What would you rate our course?</label>
+                    <input type="radio" name="rating" id="1" />
+                    <label for="1" >1</label>
+                    <input type="radio" name="rating" id="2" />
+                    <label for="2" >2</label>
+                    <input type="radio" name="rating" id="3" />
+                    <label for="3" >3</label>
+                    <input type="radio" name="rating" id="4" />
+                    <label for="4" >4</label>
+                    <input type="radio" name="rating" id="5" />
+                    <label for="5" >5</label>
+                </div>
+                <div class="form-group">
+                    <label class="question">Which modules did you watch? (Check all that apply)</label>
+                    <div class="check-option">
+                        <input type="checkbox" name="module" id="frontend" />
+                        <label for="frontent">Front-end Projects</label>
+                    </div>
+                    <div class="check-option">
+                        <input type="checkbox" name="module" id="backend" />
+                        <label for="backend">Back-end Projects</label>
+                    </div>
+                    <div class="check-option">
+                        <input type="checkbox" name="module" id="data" />
+                        <label for="data">Data Visualization</label>
+                    </div>
+                    <div class="check-option">
+                        <input type="checkbox" name="module" id="challenges" />
+                        <label for="challenges">Challenges</label>
+                    </div>
+                    <div class="check-option">
+                        <input type="checkbox" name="module" id="opensource" />
+                        <label for="opensource">Open Source Community</label>
+                    </div>
+                    <div class="check-option">
+                        <input type="checkbox" name="module" id="gitter" />
+                        <label for="gitter">Gitter help rooms</label>
+                    </div>
+                    <div class="check-option">
+                        <input type="checkbox" name="module" id="video" />
+                        <label for="video">Videos</label>
+                    </div>
+                    <div class="check-option">
+                        <input type="checkbox" name="module" id="citymeet" />
+                        <label for="citymeet">City Meetups</label>
+                    </div>
+                    <div class="check-option">
+                        <input type="checkbox" name="module" id="wiki" />
+                        <label for="wiki">Wiki</label>
+                    </div>
+                    <div class="check-option">
+                        <input type="checkbox" name="module" id="forum" />
+                        <label for="forum">Forum</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="additional" class="question">Additional Courses</label>
+                    <textarea rows="8" cols="60">
+
+                    </textarea>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
