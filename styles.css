@@ -51,7 +51,7 @@ p, h2, label{
 }
 
 .question{
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
@@ -66,18 +66,116 @@ p, h2, label{
 }
 
 .form-control{
-    width: 98%;
+    width: 97%;
     display: block;
     height: 20px;
     padding: 10px 0px 10px 10px;
     margin-top: 8px;
     border-radius: 5px;
+    border: 2px solid grey;
 }
 
+.form-control:focus{
+    outline: none !important;
+    border: 2px solid #715ff8;
+}
 
+#number{
+    width: 40%;
+}
+
+select{
+    display: block;
+    height: 20px;
+    padding: 18px 0px 18px 18px;
+    margin-top: 8px;
+    border-radius: 5px;
+    width: 40%;
+}
+
+#rating{
+    display: block;
+    margin-top: 8px;
+}
+
+#rating input{
+    margin:0 4px;
+
+}
 
 .check-option{
     display: block;
     padding: 8px 0;
 }
 
+#submit{
+    padding: 12px;
+    font-size: 17px;
+    width: 120px;
+    background-color: #715ff8;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+#submit:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+input[type="checkbox"]{
+    transform: scale(1.5);
+    margin-right: 5px;
+}
+
+option{
+    padding: 10px;
+}
+
+.dropdown{
+    padding: 20px;
+}
+
+#dropdown{
+    color: black;
+}
+
+#textarea{
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin-top: 8px;
+    max-width: 90%;
+
+}
+
+input[type="radio"]{
+    transform: scale(1.5);
+}
+
+.helper{
+    color:rgb(114, 114, 114);
+    font-size: 12px;
+}
+
+
+
+@media (max-width: 1000px) {
+    .box{
+        width: 75%;
+    }
+
+    .box:nth-child(1){
+        height: 140px;
+    }
+}
+
+@media (max-width: 550px) {
+    .box{
+        width: 95%;
+    }
+
+    .box:nth-child(1){
+        height: 170px;
+    }
+}

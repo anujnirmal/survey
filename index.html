@@ -28,84 +28,89 @@
                     <input class="form-control" type="email" id="email" placeholder="Enter your email" required/>
                 </div>
                 <div class="form-group">
-                    <label for="number" id="number-label" class="question">Age (optional)</label>
+                    <label for="number" id="number-label" class="question">Age <span class="helper"> (optional)</span></label>
                     <input class="form-control" type="number" id="number" placeholder="Enter your age" min="12" max="65"/>
                 </div>
                 <div class="form-group">
                     <label for="dropdown" class="question">Which option best describes your current role?</label>
                     <select id="dropdown" required>
-                        <option disabled selected>Select current role</option>
-                        <option>Student</option>
-                        <option>Full time job</option>
-                        <option>Full time learner</option>
-                        <option>Prefer not to say</option>
-                        <option>Others</option>
+                        <option class="dropdown">Student</option>
+                        <option class="dropdown">Full time job</option>
+                        <option class="dropdown">Full time learner</option>
+                        <option class="dropdown">Prefer not to say</option>
+                        <option class="dropdown">Others</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label class="question">What would you rate our course?</label>
-                    <input type="radio" name="rating" id="1" />
-                    <label for="1" >1</label>
-                    <input type="radio" name="rating" id="2" />
-                    <label for="2" >2</label>
-                    <input type="radio" name="rating" id="3" />
-                    <label for="3" >3</label>
-                    <input type="radio" name="rating" id="4" />
-                    <label for="4" >4</label>
-                    <input type="radio" name="rating" id="5" />
-                    <label for="5" >5</label>
+                    <div id="rating">
+                        <input type="radio" name="rating" value="0" id="1" />
+                        <label for="1" >1</label>
+                        <input type="radio" name="rating" value="2" id="2" />
+                        <label for="2" >2</label>
+                        <input type="radio" name="rating" value="3" id="3" />
+                        <label for="3" >3</label>
+                        <input type="radio" name="rating" value="4" id="4" />
+                        <label for="4" >4</label>
+                        <input type="radio" name="rating" value="5" id="5" />
+                        <label for="5" >5</label>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label class="question">Which modules did you watch? (Check all that apply)</label>
+                    <label class="question">Which modules did you watch? <span class="helper"> (check all that apply)</span></label>
                     <div class="check-option">
-                        <input type="checkbox" name="module" id="frontend" />
+                        <input type="checkbox" name="module" value="front-end" id="frontend" />
                         <label for="frontent">Front-end Projects</label>
                     </div>
                     <div class="check-option">
-                        <input type="checkbox" name="module" id="backend" />
+                        <input type="checkbox" name="module" value="back-end" id="backend" />
                         <label for="backend">Back-end Projects</label>
                     </div>
                     <div class="check-option">
-                        <input type="checkbox" name="module" id="data" />
+                        <input type="checkbox" name="module" value="data Visualization" id="data" />
                         <label for="data">Data Visualization</label>
                     </div>
                     <div class="check-option">
-                        <input type="checkbox" name="module" id="challenges" />
+                        <input type="checkbox" name="module" value="Challenges" id="challenges" />
                         <label for="challenges">Challenges</label>
                     </div>
                     <div class="check-option">
-                        <input type="checkbox" name="module" id="opensource" />
+                        <input type="checkbox" value="Open Source Community" name="module" id="opensource" />
                         <label for="opensource">Open Source Community</label>
                     </div>
                     <div class="check-option">
-                        <input type="checkbox" name="module" id="gitter" />
+                        <input type="checkbox" value="Gitter help rooms" name="module" id="gitter" />
                         <label for="gitter">Gitter help rooms</label>
                     </div>
                     <div class="check-option">
-                        <input type="checkbox" name="module" id="video" />
+                        <input type="checkbox" value="Videos"name="module" id="video" />
                         <label for="video">Videos</label>
                     </div>
                     <div class="check-option">
-                        <input type="checkbox" name="module" id="citymeet" />
+                        <input type="checkbox" value="city meetups" name="module" id="citymeet" />
                         <label for="citymeet">City Meetups</label>
                     </div>
                     <div class="check-option">
-                        <input type="checkbox" name="module" id="wiki" />
+                        <input type="checkbox" value="wiki" name="module" id="wiki" />
                         <label for="wiki">Wiki</label>
                     </div>
                     <div class="check-option">
-                        <input type="checkbox" name="module" id="forum" />
+                        <input type="checkbox" value="forum" name="module" id="forum" />
                         <label for="forum">Forum</label>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="additional" class="question">Additional Courses</label>
-                    <textarea rows="8" cols="60">
+                    <textarea id="textarea" rows="8" cols="60">
 
                     </textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" id="submit" />
                 </div>
             </form>
         </div>
     </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
